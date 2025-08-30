@@ -2,39 +2,42 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
-  <title>Redirecting…</title>
-
-  <!-- 검색엔진에 노출 불필요하면 유지 -->
-  <meta name="robots" content="noindex,nofollow" />
-
-  <!-- 1) 메타 리프레시(백업용). 0초 후 이동 -->
-  <meta http-equiv="refresh" content="0; url=https://cafe.naver.com/caromfactory/2254" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <script>
-    // 2) JS 리다이렉트 (쿼리/해시까지 보존해서 전달)
-    (function () {
-      var base = "https://cafe.naver.com/caromfactory/2254"; // ← 여기만 바꾸세요
-      // 현재 페이지의 쿼리스트링과 해시를 목적지에 그대로 전달하고 싶으면 사용
-      var suffix = location.search + location.hash;
-      location.replace(base + suffix);
-    })();
-  </script>
-
+  <title>Charlie HomePage</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-         display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0;background:#000;color:#fff}
-    a{color:#00ff7f}
-    .box{max-width:640px;padding:24px;text-align:center}
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+    a {
+      font-size: 0.9rem;
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      position: absolute;
+      bottom: 20px;
+    }
   </style>
 </head>
 <body>
-  <!-- 3) JS가 꺼져 있을 때를 위한 안전장치 -->
-  <div class="box">
-    <h1>이동 중…</h1>
-    <p>잠시 후 자동으로 페이지가 이동합니다.</p>
-    <p><a href="https://cafe.naver.com/caromfactory/2254">바로 이동하기</a></p>
+  <h1>어플 개발자 Charlie HomePage</h1>
+  <div class="footer">
+    <a href="https://cafe.naver.com/caromfactory/2254" target="_blank">개인정보처리방침</a>
   </div>
 </body>
 </html>
