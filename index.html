@@ -6,19 +6,23 @@
   <title>Charlie HomePage</title>
   <style>
     body {
-      font-family: "Noto Sans KR", sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      height: 100vh;
       margin: 0;
       background-color: #f9f9f9;
       color: #333;
     }
+    .icon-text img {
+      width: 40px;
+      height: auto;
+      vertical-align: middle; /* 글자 기준 중앙 정렬 */
+    }
+    .icon-text {
+      font-size: 24px;
+    }
     h1 {
       font-size: 2.5rem;
-      margin-bottom: 50px;
     }
     a {
       font-size: 0.9rem;
@@ -31,17 +35,29 @@
     .footer {
       position: absolute;
       bottom: 20px;
-    }
+      align-items: center;
+   }
   </style>
-  <!-- Google Fonts for Korean -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 </head>
 <body>
+<br><br>
+
   <h1>Developer(Charlie)'s HomePage</h1>
+  <h2> Application List</h2>
+  <table>
+    <tr><td align="left">
+    <div class="icon-text">
+    <li><a href="https://play.google.com/store/apps/details?id=com.sobang.nfsc&pcampaignid=web_share"><img src="https://play-lh.googleusercontent.com/kv4oURAFqai9SkvarX_By3n1NVGGpO9pSye_hHf3NV2D3VOx82w1zQSwOtzrp0Rfz8X7=w240-h480-rw"> 화재안전기준</a><p>
+    <li><a href="https://play.google.com/store/apps/details?id=com.sobang.dipswitch"><img src="https://play-lh.googleusercontent.com/hcmkDXrKCW4LqSMYHWz-lX4yDPTnFYr8aKL-fUvC_VJRneoe4NTsN0qiXVp_My0j3Vc=w240-h480-rw"> 딥스위치(Dip Switch)계산 </a><p>
+    <li><a href="https://play.google.com/store/apps/details?id=com.sobang.billiardtable&pcampaignid=web_share"><img src="https://play-lh.googleusercontent.com/La1ZKuGly5b2oegYiTR84NZPoU6MYZxGqcsrPEKLXW-X5WoI0D2nKV8JghernMcWuA=w240-h480-rw"> 손안의 당구작전판, 3쿠션 복기용 노트 </a><p>
+    <li><a href="https://play.google.com/store/apps/details?id=com.sobang.billiardtablepro&pcampaignid=web_share"><img src="https://play-lh.googleusercontent.com/oLJrLsiOR2wshPQ-jPVYL40VBiHtGJq_i-wsUHqStGbKKA0DMnu2PCwWghhtb2vnTaI=w240-h480-rw"> 손안의 당구작전판(프로), 3쿠션 복기용 노트 </a><p>
+    <li><a href="https://play.google.com/store/apps/details?id=com.sobang.sobangojt&pcampaignid=web_share"><img src="https://play-lh.googleusercontent.com/KA0gC3gUhwjm5794mc8FX5fqogElyEgaYIjDACBqVSfqCySB2TG4FvQSTkPHS3_OqtI=w240-h480-rw"> 현장 실전 소방 (소방 OJT) </a><p>
+    </div>
+    </td><tr>
+  </table>
   <div class="footer">
-    <a href="https://cafe.naver.com/caromfactory/2254" target="_blank">��������ó����ħ</a>
+    <a href="https://cafe.naver.com/caromfactory/2254" target="_blank">개인정보처리방침</a>
   </div>
+
 </body>
 </html>
